@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- App icon master. iOS applies the rounded-corner mask itself, so the
+       background fills the whole square. Regenerate the PNGs with
+       tool/app_icon/generate.sh after editing. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A8BFA"/>
+      <stop offset="1" stop-color="#1446C4"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCE4F2"/>
+    </linearGradient>
+    <radialGradient id="glass" cx="0.42" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#4C6FC4"/>
+      <stop offset="0.55" stop-color="#1A2D66"/>
+      <stop offset="1" stop-color="#070E26"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Camera body: shutter button, viewfinder hump, main body -->
+  <g fill="url(#body)">
+    <rect x="228" y="296" width="96" height="56" rx="18"/>
+    <path d="M404 252 H620 Q648 252 660 278 L690 352 H334 L364 278 Q376 252 404 252 Z"/>
+    <rect x="172" y="332" width="680" height="460" rx="110"/>
+  </g>
+
+  <!-- Lens -->
+  <circle cx="512" cy="562" r="182" fill="#0B1533"/>
+  <circle cx="512" cy="562" r="150" fill="url(#glass)"/>
+  <circle cx="512" cy="562" r="74" fill="#040919"/>
+  <ellipse cx="433" cy="483" rx="44" ry="22" fill="#FFFFFF" opacity="0.38"
+           transform="rotate(-45 433 483)"/>
+  <circle cx="574" cy="618" r="14" fill="#FFFFFF" opacity="0.18"/>
+
+  <!-- Flash -->
+  <circle cx="756" cy="404" r="28" fill="#FFC53D"/>
+</svg>
